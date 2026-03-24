@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: kabir-tatva-gyan
+    runtime: static
+    staticPublishPath: ./web
+    buildCommand: echo "Static site ready"
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
