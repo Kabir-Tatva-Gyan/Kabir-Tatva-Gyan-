@@ -1,0 +1,5 @@
+[auth]
+allowed_redirect_urls = [
+  "https://gb75dcnc.insforge.site",
+  "https://gb75dcnc.insforge.site/"
+]
